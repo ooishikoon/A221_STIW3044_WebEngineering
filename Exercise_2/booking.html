@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bookind Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-image: url("images/booking.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>BOOK A CAR</h3>
+            <div class="name">
+                <i class="material-icons">person</i>
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="phoneno">
+                <i class="material-icons">phone</i>
+                <input type="text" placeholder="PhoneNo" id="phoneno">
+            </div>
+            <div class="pickuploc">
+                <i class="material-icons">place</i>
+                <input type="text" placeholder="Pickup" id="pickuploc">
+            </div>
+            <div class="destination">
+                <i class="material-icons">pin_drop</i>
+                <input type="text" placeholder="Destination" id="destination">
+            </div>
+            <div class="pickupdate">
+                <i class="material-icons">date_range</i>
+                <input type="date" placeholder="PickupDate" id="pickupdate">
+            </div>
+            <div class="time">
+                <i class="material-icons">schedule</i>
+                <input type="time" placeholder="Time" name="time" id="time" value="00:00" />
+            </div>
+            <div class="button1">
+                <button onclick="window.location.href = 'index.html';">Cancel</button>
+            </div>
+            <div class="button">
+                <button id="send" onclick="message()">Book Now</button>
+            </div>
+            <div class="message">
+                <div class="success" id="success">Book Successfully!</div>
+                <div class="danger" id="danger">Please enter all required fields!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/alert.js"></script>
+</body>
+
+</html>

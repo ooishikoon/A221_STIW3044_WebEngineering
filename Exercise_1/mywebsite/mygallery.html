@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-image: url("images/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topnav {
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: right;
+            color: #f2f2f2;
+            font-family: Book Antiqua;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #8699a6;
+            color: pink;
+        }
+
+        .topnav a.active {
+            background-color: #8699a6;
+            color: white;
+        }
+
+        .previous {
+            padding: 12px 24px;
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .next {
+            padding: 12px 24px;
+            background-color: #5a6e7b;
+            color: black;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="mylinks.html">My Links</a>
+        <a class="active" href="mygallery.html">My Gallery</a>
+        <a href="myself.html">My Self</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1><b>My Gallery</b></h1>
+        </div>
+
+        <br>
+
+        <p style="text-align:center;"><img src="images/me.jpeg" width="260" height="350"></p>
+
+        <br>
+
+        <div class="footer">
+            <p style="text-align:center;"><a href="myself.html" class="previous round">&#8249;</a>
+                <a href="mylinks.html" class="next round">&#8250;</a>
+            </p>
+        </div>
+
+</body>
+
+</html>
