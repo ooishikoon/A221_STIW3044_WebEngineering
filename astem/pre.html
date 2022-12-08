@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>survey</title>
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="pretest.php"> <br>
+        <h3 style="text-align:center;">Pra-ujian</h3>
+        <br>
+        <!-- Input type text -->
+        <center>
+            <div style="width: 25%;" class="form-group custom-control-inline">
+                <label for="email">Email </label>
+                <input type="email" class="form-control form-control-sm" name="email" id="email" placeholder="email yang didaftarkan" required>
+            </div>
+            <div>
+                <p><b>1 (Sangat Tidak Setuju) ------ 7 (Sangat Setuju)</b></p>
+            </div>
+        </center>
+
+        <table style="width:60%;" class="center table table-bordered table-hover table-responsive-sm">
+            <thead>
+                <th width="3%">No</th>
+                <th width="50%">Soalan</th>
+                <th width="1%">1</th>
+                <th width="1%">2</th>
+                <th width="1%">3</th>
+                <th width="1%">4</th>
+                <th width="1%">5</th>
+                <th width="1%">6</th>
+                <th width="1%">7</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Saya tahu apa itu teknologi disruptif.</td>
+                    <div class="form-group">
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer1" id="ir_id11" value="1" required>
+                                <label class="custom-control-label" for="ir_id11"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer1" id="ir_id12" value="2">
+                                <label class="custom-control-label" for="ir_id12"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer1" id="ir_id13" value="3">
+                                <label class="custom-control-label" for="ir_id13"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer1" id="ir_id14" value="4">
+                                <label class="custom-control-label" for="ir_id14"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer1" id="ir_id15" value="5">
+                                <label class="custom-control-label" for="ir_id15"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer1" id="ir_id16" value="6">
+                                <label class="custom-control-label" for="ir_id16"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer1" id="ir_id17" value="7">
+                                <label class="custom-control-label" for="ir_id17"></label>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Saya tahu mengenai pengaruh teknologi disruptif dalam pendidikan masa kini dan masa hadapan.
+                    </td>
+                    <div class="form-group">
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer2" id="ir_id21" value="1" required>
+                                <label class="custom-control-label" for="ir_id21"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer2" id="ir_id22" value="2">
+                                <label class="custom-control-label" for="ir_id22"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer2" id="ir_id23" value="3">
+                                <label class="custom-control-label" for="ir_id23"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer2" id="ir_id24" value="4">
+                                <label class="custom-control-label" for="ir_id24"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer2" id="ir_id25" value="5">
+                                <label class="custom-control-label" for="ir_id25"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer2" id="ir_id26" value="6">
+                                <label class="custom-control-label" for="ir_id26"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer2" id="ir_id27" value="7">
+                                <label class="custom-control-label" for="ir_id27"></label>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Saya tahu pengaruh teknologi disruptif terhadap bidang kerjaya/pendidikan saya.</td>
+                    <div class="form-group">
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer3" id="ir_id31" value="1" required>
+                                <label class="custom-control-label" for="ir_id31"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer3" id="ir_id32" value="2">
+                                <label class="custom-control-label" for="ir_id32"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer3" id="ir_id33" value="3">
+                                <label class="custom-control-label" for="ir_id33"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer3" id="ir_id34" value="4">
+                                <label class="custom-control-label" for="ir_id34"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer3" id="ir_id35" value="5">
+                                <label class="custom-control-label" for="ir_id35"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer3" id="ir_id36" value="6">
+                                <label class="custom-control-label" for="ir_id36"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer3" id="ir_id37" value="7">
+                                <label class="custom-control-label" for="ir_id37"></label>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Saya boleh mengenalpasti aspek dalam teknologi disruptif dan pendidikan.</td>
+                    <div class="form-group">
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer4" id="ir_id41" value="1" required>
+                                <label class="custom-control-label" for="ir_id41"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer4" id="ir_id42" value="2">
+                                <label class="custom-control-label" for="ir_id42"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer4" id="ir_id43" value="3">
+                                <label class="custom-control-label" for="ir_id43"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer4" id="ir_id44" value="4">
+                                <label class="custom-control-label" for="ir_id44"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer4" id="ir_id45" value="5">
+                                <label class="custom-control-label" for="ir_id45"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer4" id="ir_id46" value="6">
+                                <label class="custom-control-label" for="ir_id46"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer4" id="ir_id47" value="7">
+                                <label class="custom-control-label" for="ir_id47"></label>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Saya berminat tentang program teknologi disruptif dalam pendidikan.</td>
+                    <div class="form-group">
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer5" id="ir_id51" value="1" required>
+                                <label class="custom-control-label" for="ir_id51"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer5" id="ir_id52" value="2">
+                                <label class="custom-control-label" for="ir_id52"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer5" id="ir_id53" value="3">
+                                <label class="custom-control-label" for="ir_id53"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer5" id="ir_id54" value="4">
+                                <label class="custom-control-label" for="ir_id54"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer5" id="ir_id55" value="5">
+                                <label class="custom-control-label" for="ir_id55"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer5" id="ir_id56" value="6">
+                                <label class="custom-control-label" for="ir_id56"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="answer5" id="ir_id57" value="7">
+                                <label class="custom-control-label" for="ir_id57"></label>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+        <center><button type="submit" class="btn btn-primary" name="submitpre" id="submit">Selesai</button></center>
+    </form>
+</body>
+
+</html>

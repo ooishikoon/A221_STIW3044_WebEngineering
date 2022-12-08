@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Lab Exercise 3</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-image: url("images/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body onload="menu()">
+
+    <script>
+        function menu() {
+            let option = prompt("1: Execute the Program\n2: Exit");
+            if (option == 1) {
+                background();
+                input();
+            }
+            if (option == 2) {
+                exit();
+            }
+
+            function background() {
+                document.write("<h1 style='text-align: center;'><b>Square and Cube Formulate Table</b></h1>");
+            }
+
+            function input() {
+                let input = prompt("Please enter an integer: ");
+                var number = parseInt(input);
+
+                var square;
+                var cube;
+                document.write("<table border='1' width='300' cellspacing='1' align='center'>");
+                document.write("<tr>");
+                document.write("<td style='text-align: center;'><b>Number</b></td>");
+                document.write("<td style='text-align: center;'><b>Square</b></td>");
+                document.write("<td style='text-align: center;'><b>Cube</b></td>");
+                document.write("</tr>");
+
+                for (var i = 1; i <= number; i++) {
+                    square = Math.pow(i, 2);
+                    cube = Math.pow(i, 3);
+                    document.write("<tr>");
+                    document.write("<td style='text-align: center;'>");
+                    document.writeln(i);
+                    document.write("</td>");
+                    document.write("<td style='text-align: center;'>");
+                    document.writeln(square);
+                    document.write("</td>");
+                    document.write("<td style='text-align: center;'>");
+                    document.writeln(cube);
+                    document.write("</td>");
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+            }
+
+            function exit() {
+                let text = "Are you going to exit the program?";
+                if (confirm(text) == true) {
+                    window.close();
+                } else {
+                    menu();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

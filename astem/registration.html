@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="p-5 text-center mb-5 text-white" style="background-image: linear-gradient(blue, white);">
+        <h3>@dramran<br>Enhancing your web development experience</h3>
+
+    </div>
+    <center><img src="images/1631257715794.jpg" alt="poster" style="width:20% ;"></center>
+    <div class="card center50 mt-5">
+
+        <div class="card-header">Registration</div>
+        <div class="card-body">
+
+            <form method="post" action="register.php">
+                <!-- Input type text -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control form-control-sm" name="name" id="name"
+                         required>
+                </div>
+
+                <!-- Input type text -->
+                <div class="form-group">
+                    <label for="ic">Id No.</label>
+                    <input type="text" class="form-control form-control-sm" name="ic" id="ic"
+                         required>
+                </div>
+
+                <!-- Input type text -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control form-control-sm" name="email" id="email"
+                        required>
+                </div>
+
+                <!-- Input type text -->
+                <div class="form-group">
+                    <label for="institution">Institution</label>
+                    <input type="text" class="form-control form-control-sm" name="institution" id="institution"
+                         required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" name="submit" id="submit">Hantar</button>
+            </form>
+
+
+        </div>
+    </div>
+    <div class="bg-primary my-5">
+        <footer class="text-white text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="https://dramran.com/">@dramran.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+</body>
+
+</html>

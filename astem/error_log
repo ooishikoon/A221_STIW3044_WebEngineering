@@ -1,0 +1,145 @@
+[16-Oct-2022 15:02:35 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/dramranc/public_html/astem/register.php on line 20
+[16-Oct-2022 17:04:12 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/verify.php on line 14
+[16-Oct-2022 17:06:25 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/verify.php on line 14
+[16-Oct-2022 17:09:14 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/verify.php on line 14
+[16-Oct-2022 17:09:17 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/verify.php on line 14
+[16-Oct-2022 17:09:20 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/verify.php on line 14
+[16-Oct-2022 17:09:21 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/verify.php on line 14
+[16-Oct-2022 17:10:27 UTC] PHP Warning:  Undefined array key "email" in /home/dramranc/public_html/astem/verify.php on line 12
+[16-Oct-2022 17:10:31 UTC] PHP Warning:  Undefined array key "email" in /home/dramranc/public_html/astem/verify.php on line 12
+[16-Oct-2022 17:11:09 UTC] PHP Warning:  Undefined array key "email" in /home/dramranc/public_html/astem/verify.php on line 12
+[16-Oct-2022 17:12:04 UTC] PHP Warning:  Undefined array key "email" in /home/dramranc/public_html/astem/verify.php on line 12
+[16-Oct-2022 17:14:30 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:31 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:32 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:32 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:34 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:34 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:35 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:35 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:35 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:36 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:36 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:37 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:38 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:39 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:39 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:39 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:14:40 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, mysqli_result given in /home/dramranc/public_html/astem/verify.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/verify.php on line 28
+[16-Oct-2022 17:33:46 UTC] PHP Warning:  Attempt to read property "status" on array in /home/dramranc/public_html/astem/verify.php on line 29
+[16-Oct-2022 17:35:23 UTC] PHP Warning:  Attempt to read property "status" on array in /home/dramranc/public_html/astem/verify.php on line 29
+[16-Oct-2022 17:35:23 UTC] PHP Warning:  Attempt to read property "status" on array in /home/dramranc/public_html/astem/verify.php on line 30
+[17-Oct-2022 14:56:01 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/dramranc/public_html/astem/admin.php on line 9
+[19-Oct-2022 06:05:33 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/dramranc/public_html/astem/cert.php on line 11
+[25-Oct-2022 00:52:23 UTC] PHP Warning:  Undefined variable $name in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 00:52:23 UTC] PHP Warning:  Undefined variable $ic in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 00:52:23 UTC] PHP Warning:  Undefined variable $institution in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 00:52:23 UTC] PHP Warning:  Undefined variable $passkey in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 00:52:23 UTC] PHP Warning:  Undefined variable $passkey in /home/dramranc/public_html/astem/pretest.php on line 65
+[25-Oct-2022 00:52:23 UTC] PHP Warning:  Undefined variable $passkey in /home/dramranc/public_html/astem/pretest.php on line 65
+[25-Oct-2022 00:54:51 UTC] PHP Warning:  Undefined variable $name in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 00:54:51 UTC] PHP Warning:  Undefined variable $ic in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 00:54:51 UTC] PHP Warning:  Undefined variable $institution in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 00:54:51 UTC] PHP Warning:  Undefined variable $passkey in /home/dramranc/public_html/astem/pretest.php on line 61
+[25-Oct-2022 01:44:36 UTC] PHP Warning:  Undefined variable $email in /home/dramranc/public_html/astem/cert.php on line 17
+[25-Oct-2022 01:46:59 UTC] PHP Warning:  Undefined variable $email in /home/dramranc/public_html/astem/cert.php on line 17
+[25-Oct-2022 01:47:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "location" in /home/dramranc/public_html/astem/cert.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/cert.php on line 45
+[25-Oct-2022 01:48:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "location" in /home/dramranc/public_html/astem/cert.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/cert.php on line 45
+[25-Oct-2022 03:04:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "location" in /home/dramranc/public_html/astem/cert.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/cert.php on line 45
+[25-Oct-2022 03:05:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "location" in /home/dramranc/public_html/astem/cert.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/cert.php on line 45
+[25-Oct-2022 03:10:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "location" in /home/dramranc/public_html/astem/cert.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/dramranc/public_html/astem/cert.php on line 45
+[25-Oct-2022 03:12:21 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/cert.php on line 61
+[25-Oct-2022 03:24:26 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/cert.php on line 59
+[25-Oct-2022 03:24:36 UTC] PHP Warning:  Undefined array key "passkey" in /home/dramranc/public_html/astem/cert.php on line 59
+[25-Oct-2022 06:34:14 UTC] PHP Warning:  Undefined array key "answer1" in /home/dramranc/public_html/astem/pretest.php on line 14
+[25-Oct-2022 06:34:14 UTC] PHP Warning:  Undefined array key "answer2" in /home/dramranc/public_html/astem/pretest.php on line 15
+[25-Oct-2022 06:34:14 UTC] PHP Warning:  Undefined array key "answer3" in /home/dramranc/public_html/astem/pretest.php on line 16
+[25-Oct-2022 06:34:14 UTC] PHP Warning:  Undefined array key "answer4" in /home/dramranc/public_html/astem/pretest.php on line 17
+[25-Oct-2022 06:34:14 UTC] PHP Warning:  Undefined array key "answer5" in /home/dramranc/public_html/astem/pretest.php on line 18
+[25-Oct-2022 08:26:13 UTC] PHP Warning:  Undefined array key "answer1" in /home/dramranc/public_html/astem/pretest.php on line 14
+[25-Oct-2022 08:26:13 UTC] PHP Warning:  Undefined array key "answer2" in /home/dramranc/public_html/astem/pretest.php on line 15
+[25-Oct-2022 08:26:13 UTC] PHP Warning:  Undefined array key "answer3" in /home/dramranc/public_html/astem/pretest.php on line 16
+[25-Oct-2022 08:26:13 UTC] PHP Warning:  Undefined array key "answer4" in /home/dramranc/public_html/astem/pretest.php on line 17
+[25-Oct-2022 08:26:13 UTC] PHP Warning:  Undefined array key "answer5" in /home/dramranc/public_html/astem/pretest.php on line 18

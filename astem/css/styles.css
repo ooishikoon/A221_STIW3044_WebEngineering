@@ -1,0 +1,43 @@
+.center50 {
+    margin: auto;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 1px;
+    box-shadow: 5px 10px #888888;
+    padding: 10px;
+}
+
+.center80 {
+    margin: auto;
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    padding: 10px;
+}
+
+.center30 {
+    margin: auto;
+    width: 30%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 5px 10px #888888;
+    padding: 10px;
+}
+.center90 {
+    margin: auto;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 5px 10px #888888;
+    padding: 10px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(white, blue);
+    color: white;
+    text-align: center;
+}
