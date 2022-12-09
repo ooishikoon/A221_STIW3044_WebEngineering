@@ -14,22 +14,49 @@ if ($conn->connect_error) {
 } else
     echo "<center>Successful connected</center>";
 
-// // Add Data
-// echo "<form method=POST><center><button type='submit' name='add'>Update Data</button></center></form>";
-// if (isset($_POST["add"])) {
-//     $sqlinsert = "INSERT INTO data (a, b, c) VALUES ('" . $a . "', '" . $b . "', '" . $c . "')";
-//     if ($conn->query($sqlinsert) === TRUE) {
-//         echo "<center>Data added</center>";
-//     }
-// }
+ // List Data
+ $sqlstudent = "SELECT * FROM tbl_student";
+ $result = $conn->query($sqlstudent);
+ if ($result -> num_rows == 0)
+     echo '<script>document.getElementById("reset").style.display = "block"</script>';
+ else
+     echo '<script>document.getElementById("reset").style.display = "none"</script>';
+ 
+ echo "<center>No of records:" . $result->num_rows . "</center>
+ <table class='table table-hover mx-auto w-auto' style='margin-left: auto;margin-right: auto;'>
+ <form method=POST>";
+ echo "<tr><th>Student</th>
+         <th>Matric</th>
+         <th>Name</th>
+         <th>Email</th>
+         <th>Race</th>
+         <th>Gender</th>
+         <th>Actions</th></tr>";
+
+ while ($row = mysqli_fetch_assoc($result)) {
+     echo "<tr><td><button type='submit' class='btn btn-primary'>Save</button></td><td>" . $row["matric"] . "</td><td>" . $row["name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["race"] . "</td><td>" . $row["gender"] . "</td>
+         <td><button type='submit' class='btn btn-outline-danger btn-sm' name='remove' value='" . $row["id"] . "'>Remove</button>
+         <button type='submit' class='btn btn-outline-primary btn-sm' name='edit' value='" . $row["id"] . "'>Edit</button></td></tr>";
+        }
+ echo "</table></form>";
+
+// Remove Data Row
+if (isset($_POST["remove"])) {
+    $sql = "DELETE FROM tbl_student WHERE id=" . $_POST['remove'];
+    $conn->query($sql);
+    echo "<center>Data (" . $_POST['remove'] . ") deleted</center>";
+}
 
 // Edit Record
 if (isset($_POST["edit"])) {
-    $sqlread = "SELECT * FROM data WHERE id=" . $_POST["edit"];
-    $result = $conn->query($sqlread);
+    $sqlstudent = "SELECT * FROM tbl_student WHERE id=" . $_POST["edit"];
+    $result = $conn->query($sqlstudent);
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "<center>Edit id=".$_POST["edit"]." <form method='POST'><input type='text' name='a' value='" . $row['a'] . "'>";
-        echo "<input type='text' name='b' value='" . $row['b'] . "'>";
+        echo "<center>Edit id=" . $_POST["edit"] . " <form method='POST'><input type='text' class='form-control' name='matric' value='" . $row['matric'] . "' required>";
+        echo "<input type='text' name='name' class='form-control' value='" . $row['name'] . "'>";
+		echo "<input type='text' name='email' class='form-control' value='" . $row['email'] . "'>";
+		echo "<input type='text' name='race' class='form-control' value='" . $row['race'] . "'>";
+		echo "<input type='text' name='gender' class='form-control' value='" . $row['gender'] . "'>";
         echo "<button type='submit' name='process_edit' value='" . $_POST["edit"] . "' >Submit</button><button><a href=' '></a>Cancel</button></form></center>";
     }
 }
@@ -37,11 +64,13 @@ if (isset($_POST["edit"])) {
 // Update Data
 if (isset($_POST["process_edit"])) {
     $id = $_POST["process_edit"];
-    $a = $_POST['a'];
-    $b = $_POST['b'];
-    $c = $a + $b;
+    $matric = $_POST['matric'];
+    $name = $_POST['name'];
+	$email = $_POST['email'];
+	$race = $_POST['race'];
+	$gender = $_POST['gender'];
 
-    $sqlupdate = "UPDATE data set a ='$a', b ='$b', c ='$c' where id='$id' ";
+    $sqlupdate = "UPDATE tbl_student SET matric ='$matric', name ='$name', email ='$email', race ='$race', gender ='$gender' WHERE id='$id' ";
 
     if ($conn->query($sqlupdate) === TRUE) {
         echo "<center>Data Updated</center>";
@@ -63,130 +92,6 @@ $conn->close();
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<section class="main-content">
-		<div class="container">
-			<h1>Student Data</h1>
-			<br>
-
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Student</th>
-						<th>Matric</th>
-						<th>Race</th>
-						<th>Gender</th>
-						<th>Contact</th>
-						<th>Actions</th>
-					</tr>
-				</thead>
-                <!-- body table -->
-				<tbody>
-					<tr>
-						<td>
-							<div class="user-info">
-								<div class="user-info__img">
-									<img src="images/user1.jpg" alt="User Img">
-								</div>
-								<div class="user-info__basic">
-									<h5 class="mb-0">Kiran Acharya</h5>
-									<p class="text-muted mb-0">@kiranacharyaa</p>
-								</div>
-							</div>
-						</td>
-						<td>
-							<span class="active-circle bg-success"></span> Active
-						</td>
-						<td>Bangalore</td>
-						<td>+91 9876543215</td>
-						<td>
-							<button class="btn btn-primary btn-sm">Contact</button>
-						</td>
-						<td>
-							<div class="dropdown open">
-								<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-											<i class="fa fa-ellipsis-v"></i>
-								</a>
-								<div class="dropdown-menu" aria-labelledby="triggerId1">
-									<a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-									<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
-								</div>
-							</div>
-						</td>
-					</tr>
-                    <!-- Next data -->
-					<tr>
-						<td>
-							<div class="user-info">
-								<div class="user-info__img">
-									<img src="images/user1.jpg" alt="User Img">
-								</div>
-								<div class="user-info__basic">
-									<h5 class="mb-0">Kiran Acharya</h5>
-									<p class="text-muted mb-0">@kiranacharyaa</p>
-								</div>
-							</div>
-						</td>
-						<td>
-							<span class="active-circle bg-danger"></span> Inactive
-						</td>
-						<td>Bangalore</td>
-						<td>+91 9876543215</td>
-						<td>
-							<button class="btn btn-primary btn-sm">Contact</button>
-						</td>
-						<td>
-							<div class="dropdown open">
-								<a href="#!" class="px-2" id="triggerId2" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-											<i class="fa fa-ellipsis-v"></i>
-								</a>
-								<div class="dropdown-menu" aria-labelledby="triggerId2">
-									<a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-									<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
-								</div>
-							</div>
-						</td>
-					</tr>
-                    <!-- Next data -->
-					<tr>
-						<td>
-							<div class="user-info">
-								<div class="user-info__img">
-									<img src="images/user1.jpg" alt="User Img">
-								</div>
-								<div class="user-info__basic">
-									<h5 class="mb-0">Kiran Acharya</h5>
-									<p class="text-muted mb-0">@kiranacharyaa</p>
-								</div>
-							</div>
-						</td>
-						<td>
-							<span class="active-circle bg-success"></span> Active
-						</td>
-						<td>Bangalore</td>
-						<td>+91 9876543215</td>
-						<td>
-							<button class="btn btn-primary btn-sm">Contact</button>
-						</td>
-						<td>
-							<div class="dropdown open">
-								<a href="#!" class="px-2" id="triggerId3" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-											<i class="fa fa-ellipsis-v"></i>
-								</a>
-								<div class="dropdown-menu" aria-labelledby="triggerId3">
-									<a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-									<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
-								</div>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

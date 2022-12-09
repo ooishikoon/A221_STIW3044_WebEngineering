@@ -60,3 +60,10 @@ body {
 	margin-right: 5px;
 	display: inline-block;
 }
+
+h3 {
+    font-size: 35px;
+    margin: 15px;
+    color: red;
+    font-family: Book Antiqua;
+}
