@@ -73,7 +73,7 @@ if ($conn->connect_error) {
             <option value="gender">Gender</option>
             </select>
         <button type="submit" class='btn btn-primary btn-search' name="submit" value="search"><i class='fa fa-search'></i>Search</button>
-        </tr>;
+        </tr>
         </div>
         </form>
         <?php

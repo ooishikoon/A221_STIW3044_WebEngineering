@@ -20,14 +20,14 @@ if (isset($_POST["edit"])) {
   
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<center><form method = 'POST' form action = 'update.php' enctype='multipart/form-data'>
-        <h1>Edit Data</h1>
+        <h2>Modify the data you want</h2>
         <table class= 'table table-borderless mx-auto w-auto' style='margin-left: auto;margin-right: auto;'>
-        <tr><td><strong>Matric  :</strong></td><td> <input type='text' name='matric' value='" . $row['matric'] . "'><br><br></td></tr>";
-        echo "<tr><td><strong>Name  :</strong></td><td> <input type='text' name='name' value='" . $row['name'] . "'><br><br></td></tr>";
-        echo "<tr><td><strong>Email  :</strong></td><td> <input type='email' name='email' value='" . $row['email'] . "'><br><br></td></tr>";
-        echo "<tr><td><strong>Race  :</strong></td><td> <input type='text' name='race' value='" . $row['race'] . "'><br><br></td></tr>";
-        echo "<tr><td><strong>Gender  :</strong></td><td> <input type='text' name='gender' value='" . $row['gender'] . "'><br><br></td></tr>";
-        echo "<tr><td><strong>Image  :</strong></td><td> <input type='file' name='image' required><br><br></td></tr>";
+        <tr><td><b>Matric  :</strong></td><td> <input type='text' name='matric' value='" . $row['matric'] . "'><br><br></td></tr>";
+        echo "<tr><td><b>Name  :</strong></td><td> <input type='text' name='name' value='" . $row['name'] . "'><br><br></td></tr>";
+        echo "<tr><td><b>Email  :</strong></td><td> <input type='email' name='email' value='" . $row['email'] . "'><br><br></td></tr>";
+        echo "<tr><td><b>Race  :</strong></td><td> <input type='text' name='race' value='" . $row['race'] . "'><br><br></td></tr>";
+        echo "<tr><td><b>Gender  :</strong></td><td> <input type='text' name='gender' value='" . $row['gender'] . "'><br><br></td></tr>";
+        echo "<tr><td><b>Image  :</strong></td><td> <input type='file' name='image' required><br><br></td></tr>";
         echo "<tr><td colspan='2', style='text-align: center'><button type='submit' class='btn btn-primary' name='process_edit' value='" . $_POST["edit"] . "' >Submit</button></td></tr>
         </table></form></center>";
         
@@ -47,11 +47,12 @@ if (isset($_POST["process_edit"])) {
     //Get the content of the image and then add slashes to it 
     $imagetmp=addslashes (file_get_contents($_FILES['image']['tmp_name']));
 
-    $sqlupdate = "UPDATE tbl_student set matric ='$matric', `name` ='$name', email ='$email', `race` ='$race', gender ='$gender', `std_image` = '$imagetmp' where Matric='$matric' ";
+    $sqlupdate = "UPDATE tbl_student set matric ='$matric', `name` ='$name', email ='$email', `race` ='$race', gender ='$gender', `std_image` = '$imagetmp' where id='$id' ";
 
 
     if ($conn->query($sqlupdate) === TRUE) {
-        echo "<center><h2>Data Updated</h2>";
+        echo "<br><br>";
+        echo "<center><h2>Data Updated Successfully</h2>";
         echo "<br><a href='list.php'><button type='submit' class='btn btn-success btn-lg' name='back' value=''>Back to List</button></a></center>";
     }
 
