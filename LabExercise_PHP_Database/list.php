@@ -15,9 +15,6 @@ if ($conn->connect_error) {
 
 echo "<h2 style='text-align: center;'><b>Student Data Info List</b></h2>";
 
-// Search Data
-// echo "<div style='text-align:right' ><button type='submit' class='btn btn-primary btn-search'><i class='fa fa-search' name='search'></i><style = align('right')></style>Search></button></div>";
-
  // List Data
  $sqlstudent = "SELECT * FROM tbl_student";
  $result = $conn->query($sqlstudent);
@@ -55,23 +52,25 @@ echo "<h2 style='text-align: center;'><b>Student Data Info List</b></h2>";
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
     <form action="list.php" method="post">
-        Search <input type="text" name="search"><br>
-        <span></span>
-        Column: <select name="option">
+        <div style='text-align:right'>
+        <tr>
+        Search: <input type="text" name="search">
+        Column: <select name="column">
             <option value="race">Race</option>
             <option value="gender">Gender</option>
-            </select><br>
-        <!-- <input type ="submit"> -->
-        <button type="submit" name="submit" value="search">Search</button>
+            </select>
+        <button type="submit" class='btn btn-primary btn-search' name="submit" value="search"><i class='fa fa-search'></i>Search</button>
+        </tr>;
+        </div>
         </form>
         <?php
         if(isset($_POST["submit"])){
             $search = $_POST['search'];
-            $option = $_POST["option"];
-
-            $sqlstudent  = "SELECT * FROM student WHERE $option = '$search'";    
+            $sqlstudent  = "SELECT * FROM tbl_student WHERE race = '$search'"; 
+            $sqlstudent  = "SELECT * FROM tbl_student WHERE gender = '$search'"; 
             $result = $conn->query($sqlstudent);
             echo "<table class='table table-hover mx-auto w-auto' style='margin-left: auto;margin-right: auto;'>
             <form method=POST><h2 style='text-align: center;'>Result</h2>";
