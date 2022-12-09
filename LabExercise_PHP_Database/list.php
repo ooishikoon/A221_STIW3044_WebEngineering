@@ -34,8 +34,17 @@ echo "<h2 style='text-align: center;'><b>Student Data Info List</b></h2>";
          <th>Actions</th></tr>";
 
  while ($row = mysqli_fetch_assoc($result)) {
-     echo "<tr><td><button type='submit' class='btn btn-primary'>Save</button></td>
-         <td>" . $row["matric"] . "</td><td>" . $row["name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["race"] . "</td><td>" . $row["gender"] . "</td>
+     echo "<tr><td>";
+     echo "<img src='data:image/jpg;base64,".base64_encode( $row['std_image'] )."'
+        style='object-fit:contain;
+            width:100px;
+            height:100px;
+            border: solid 1px #CCC'/></td>
+         <td>" . $row["matric"] . "</td>
+         <td>" . $row["name"] . "</td>
+         <td>" . $row["email"] . "</td>
+         <td>" . $row["race"] . "</td>
+         <td>" . $row["gender"] . "</td>
          <td><button type='submit' class='btn btn-outline-danger btn-sm' name='remove' value='" . $row["id"] . "'>Remove</button>
          <button type='submit' class='btn btn-outline-primary btn-sm' name='edit' value='" . $row["id"] . "'>Edit</button></td></tr>";
         }
@@ -82,8 +91,13 @@ echo "<h2 style='text-align: center;'><b>Student Data Info List</b></h2>";
                     <th>Gender</th></tr>";
             if ($result->num_rows > 0){
             while($row = $result->fetch_assoc() ){
-                echo "<tr><tr><td><button type='submit' class='btn btn-primary'>Save</button></td>
-                <td>" . $row["matric"] . "</td><td>" . $row["name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["race"] . "</td><td>" . $row["gender"] . "</td></tr>";
+                echo "<tr><tr>
+                <td>" . $row["matric"] . "</td>
+                <td>" . $row["name"] . "</td>
+                <td>" . $row["email"] . "</td>
+                <td>" . $row["race"] . "</td>
+                <td>" . $row["gender"] . "</td>
+                </tr>";
             }
             } else {
                 echo "0 records";
@@ -91,6 +105,7 @@ echo "<h2 style='text-align: center;'><b>Student Data Info List</b></h2>";
             "</table>";
         }
         ?>
+        <!-- echo "<tr><tr><td><button type='submit' class='btn btn-primary'>Save</button></td> -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
